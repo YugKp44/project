@@ -16,6 +16,9 @@ app.use('/api/analytics', analyticsRoutes);
 app.get('/', (req, res) => {
   res.json({ message: 'GA4 Analytics API is running' });
 });
+app.get('/hello', (req, res) => {
+  res.json({ message: 'Hello World ' });
+});
 
 app.listen(port, () => {
   console.log(`Server running on port http://localhost:${port}`);
