@@ -22,7 +22,7 @@ const AnalyticsData = () => {
             try {
                 console.log('Fetching analytics data...');
                 
-                const response = await fetch('http://localhost:3000/api/analytics');
+                const response = await fetch('https://project-81hw.onrender.com/api/analytics');
                 console.log('Backend Response:', response);
 
                 if (!response.ok) {
